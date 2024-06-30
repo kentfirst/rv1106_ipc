@@ -14,7 +14,7 @@ __insmod()
 
 __rmmod_camera_sensor()
 {
-	for item in `echo "imx415 os04a10 sc4336 sc3336 sc530ai gc2053 sc200ai sc401ai sc450ai techpoint"`
+	for item in `echo "imx415 os04a10 sc4336 sc3336 sc530ai gc2053 sc200ai sc401ai sc450ai gc02m2 gc05a2 ov9734 techpoint"`
 	do
 		if lsmod | grep $item | awk '{print $3}' |grep -w 0;then
 			rmmod $item
@@ -55,6 +55,9 @@ __insmod gc2053.ko
 __insmod sc200ai.ko
 __insmod sc401ai.ko
 __insmod sc450ai.ko
+__insmod gc02m2.ko
+__insmod gc05a2.ko
+__insmod ov9734.ko
 __insmod techpoint.ko
 
 __insmod video_rkcif.ko

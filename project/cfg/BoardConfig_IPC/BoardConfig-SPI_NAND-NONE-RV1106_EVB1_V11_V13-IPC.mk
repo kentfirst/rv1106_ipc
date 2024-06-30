@@ -34,10 +34,16 @@ export RK_MISC=wipe_all-misc.img
 # RK_CAMERA_SENSOR_IQFILES format:
 #     "iqfile1 iqfile2 iqfile3 ..."
 # ./build.sh media and copy <SDK root dir>/output/out/media_out/isp_iqfiles/$RK_CAMERA_SENSOR_IQFILES
+#KentYu added gc02m2&gc05a2 20240625
 export RK_CAMERA_SENSOR_IQFILES="sc4336_OT01_40IRC_F16.bin sc3336_CMK-OT2119-PC1_30IRC-F16.bin sc530ai_CMK-OT2115-PC1_30IRC-F16.bin"
+#export RK_CAMERA_SENSOR_IQFILES="sc4336_OT01_40IRC_F16.bin sc3336_CMK-OT2119-PC1_30IRC-F16.bin sc530ai_CMK-OT2115-PC1_30IRC-F16.bin gc02m2_XF-GC02M2-C24YA_M201K-201.bin gc05a2_GLM-GC05A2-C24YA_HX-M0577A.bin"
+#KentYu ended
 
 # Config sensor lens CAC calibrattion bin files
+#KentYu added gc02m2&gc05a2 20240625
 export RK_CAMERA_SENSOR_CAC_BIN="CAC_sc4336_OT01_40IRC_F16 CAC_sc530ai_CMK-OT2115-PC1_30IRC-F16"
+#export RK_CAMERA_SENSOR_CAC_BIN="CAC_sc4336_OT01_40IRC_F16 CAC_sc530ai_CMK-OT2115-PC1_30IRC-F16 CAC_gc02m2_XF-GC02M2-C24YA_M201K-201 CAC_gc05a2_GLM-GC05A2-C24YA_HX-M0577A"
+#KentYu ended
 
 # Config CMA size in environment
 export RK_BOOTARGS_CMA_SIZE="66M"

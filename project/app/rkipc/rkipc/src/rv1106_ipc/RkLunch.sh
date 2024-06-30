@@ -78,6 +78,18 @@ post_chk()
 	default_rkipc_ini=/tmp/rkipc-factory-config.ini
 
 	if [ ! -f "/oem/usr/share/rkipc.ini" ]; then
+		lsmod | grep ov9734
+		if [ $? -eq 0 ] ;then
+			ln -s -f /oem/usr/share/rkipc-100w.ini $default_rkipc_ini
+		fi
+		lsmod | grep gc02m2
+		if [ $? -eq 0 ] ;then
+			ln -s -f /oem/usr/share/rkipc-200w.ini $default_rkipc_ini
+		fi
+		lsmod | grep gc05a2
+		if [ $? -eq 0 ] ;then
+			ln -s -f /oem/usr/share/rkipc-500w.ini $default_rkipc_ini
+		fi
 		lsmod | grep sc530ai
 		if [ $? -eq 0 ] ;then
 			ln -s -f /oem/usr/share/rkipc-500w.ini $default_rkipc_ini

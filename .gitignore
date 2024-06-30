@@ -1,5 +1,6 @@
 *.S
 *.txt
+*.md
 *.bin
 *.pdf
 *.jpg

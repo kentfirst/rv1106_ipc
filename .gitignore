@@ -1,0 +1,12 @@
+*.S
+*.txt
+*.bin
+*.pdf
+*.jpg
+*.bmp
+*.png
+*.param
+*build.config*
+
+docs
+tools

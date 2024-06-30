@@ -1,0 +1,16 @@
+cec
+common
+dvb*
+firewire
+#i2c
+mc
+mmc
+pci
+platform
+radio
+rc
+spi
+test-drivers
+tuners
+usb
+v4l2-core

@@ -1,0 +1,1 @@
+project/cfg/BoardConfig_IPC/RK-RELEASE-NOTES-IPC.txt
